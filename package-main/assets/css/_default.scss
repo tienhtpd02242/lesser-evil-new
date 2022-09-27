@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+  input, textarea, button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  a{
+    text-decoration: none;
+    outline: none !important;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    &:hover, &:focus, &:active{
+      color: #FFFFFF;
+    }
+  }
+  b, strong{font-weight: bold}
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p, a, span, strong, b{
+    font-family: $font-second;
+  }
+
+}
+
+
+.container{
+  max-width: 1802px;
+  padding: 0 16px;
+  margin: 0 auto;
+}

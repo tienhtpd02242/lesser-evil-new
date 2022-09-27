@@ -1,0 +1,161 @@
+/*
+Theme Name: Lesser Evil
+Description: This is the sample theme created for the Genesis Framework.
+Author: Ymods Theme
+Version: 1.0
+Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lesser-evil
+Template: genesis-block-theme
+*/
+/* --------------------------------------------------------------
+Reset
+-------------------------------------------------------------- */
+/* stylelint-disable selector-list-comma-newline-after  */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	/* stylelint-disable max-line-length */
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html{
+	overflow: unset;
+}
+body {
+	overflow-x: hidden;
+	margin: 0 auto;
+	background: #fff;
+	word-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+table {
+	/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	font-weight: 300;
+	text-align: left;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+a img {
+	border: 0;
+}
+#page {
+    padding-top: 0%;
+}
+#primary{
+	margin: inherit;
+  display: inherit;
+  width: inherit;
+  max-width: inherit;
+}
+.site-content{
+	display: inherit;
+	width: inherit;
+	padding: inherit;
+	vertical-align: inherit;
+	position: inherit;
+	z-index: inherit;
+}
+.site-footer{
+	padding: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	display: inherit;
+	width: inherit;
+	position: inherit;
+	z-index: inherit;
+	overflow: inherit;
+	background: inherit;
+	color: inherit;
+}
+.site-header{
+	display: inherit;
+  width: inherit;
+}
+.pagination a, .pagination span{
+  background: inherit;
+  padding: inherit;
+  transition: inherit;
+  display: inherit;
+  color: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  line-height: inherit;
+  vertical-align: inherit;
+  height: auto;
+}
+.pagination .prev::after,.pagination .next::after{
+	content: "";
+	display: none;
+}
+.comments-area{
+	display: inherit;
+  width: inherit;
+  position: inherit;
+  margin-top: inherit;
+  padding-top: inherit;
+  border-top: inherit;
+}
+#commentform, #respond form{
+	display: flex;
+}
+.comment-form #submit{
+	width: 100%;
+	margin-top: 0;
+}
+
+@media (max-width: 599.98px){
+	.comment-form #submit{
+		max-width: 100%;
+	}
+}
