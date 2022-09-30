@@ -8,9 +8,6 @@ $cta_text_benefit = $home_options['cta_text_benefit'];
 $cta_url_benefit = $home_options['cta_url_benefit'];
 
 $image_1 = $home_options['image_1_bnf'];
-$image_2 = $home_options['image_2_bnf'];
-$image_3 = $home_options['image_3_bnf'];
-$image_4 = $home_options['image_4_bnf'];
 
 if ( empty($home_options['show_or_hide_section_benefit']) ) {
     return;
