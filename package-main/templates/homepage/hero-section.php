@@ -2,12 +2,8 @@
 $home_options = get_fields();
 
 $cta_one = $home_options['cta_one'];
-$cta_two = $home_options['cta_two'];
 
 $image_1 = $home_options['image_1_hr'];
-$image_2 = $home_options['image_2_hr'];
-$image_3 = $home_options['image_3_hr'];
-$image_4 = $home_options['image_4_hr'];
 ?>
 
 <section class="hero-ss">
