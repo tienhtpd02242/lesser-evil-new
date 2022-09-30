@@ -1,12 +1,12 @@
 (function( $ ){
 
-    var circleDiv = new CircleType(document.getElementById('rotateDes'));
-    window.addEventListener('resize', function updateRadius() {
-        circleDiv.radius(circleDiv.element.offsetWidth / 2);
-    });
-
     $(document).ready( function() {
+        $('.choice-ss .faq_list .item-faq .question').click( function(e) {
+            e.preventDefault();
 
+            $(this).next().slideToggle();
+            $(this).parents('.item-faq').toggleClass('active');
+        });
     });
 
 })( jQuery );

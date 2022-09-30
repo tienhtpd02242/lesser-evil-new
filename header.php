@@ -36,10 +36,6 @@ $list_social_glb = $global_opts['list_social_glb'];
                 </div>
                 <div class="__right">
 
-                    <?php if ( !empty($global_opts['cta_text_header']) && !empty($global_opts['cta_url_header']) ) { ?>
-                        <a class="btn-cm _cta" href="<?php echo $global_opts['cta_url_header'];?>"><?php echo $global_opts['cta_text_header'];?></a>
-                    <?php } ?>
-
                     <?php 
                     if ( !empty($list_social_glb)) {
                         echo "<ul>";
@@ -51,6 +47,10 @@ $list_social_glb = $global_opts['list_social_glb'];
                         echo "</ul>";
                     }
                     ?>
+
+                    <?php if ( !empty($global_opts['cta_text_header']) && !empty($global_opts['cta_url_header']) ) { ?>
+                        <a class="btn-cm _cta" href="<?php echo $global_opts['cta_url_header'];?>"><?php echo $global_opts['cta_text_header'];?></a>
+                    <?php } ?>
                     
                 </div>
             </div>

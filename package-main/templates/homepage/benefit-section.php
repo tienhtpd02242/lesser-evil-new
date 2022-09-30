@@ -17,47 +17,12 @@ if ( empty($home_options['show_or_hide_section_benefit']) ) {
 }
 ?>
 
-<section class="benefit-ss">
+<section class="benefit-ss" <?php echo ($image_1) ? 'style="background-image: url('. $image_1['url'] .')";' : '';?>>
     <div class="container">
         <div class="wrap">
-
-            <img class="halo-big" src="<?php echo get_stylesheet_directory_uri();?>/images/halo-big.png">
-
-            <div class="wrap-can">
-                <?php 
-                if (!empty($image_1)) { ?>
-                    <div class="benefit-img img-1 slow-move-anticlockwise">
-                        <img src="<?php echo $image_1['url'];?>" alt="<?php echo $image_1['alt'];?>">
-                    </div>
-                <?php }
-
-                if (!empty($image_2)) { ?>
-                    <div class="benefit-img img-2 slow-move-clockwise">
-                        <img src="<?php echo $image_2['url'];?>" alt="<?php echo $image_2['alt'];?>">
-                    </div>
-                <?php }
-
-                if (!empty($image_3)) { ?>
-                    <div class="benefit-img img-3 slow-move-anticlockwise">
-                        <img src="<?php echo $image_3['url'];?>" alt="<?php echo $image_3['alt'];?>">
-                    </div>
-                <?php }
-
-                if (!empty($image_4)) { ?>
-                    <div class="benefit-img img-4 slow-move-clockwise">
-                        <img src="<?php echo $image_4['url'];?>" alt="<?php echo $image_4['alt'];?>">
-                    </div>
-                <?php }
-                ?>
-            </div>
             
             <div class="content">
-                <?php 
-                if ( !empty($description_benefit)) { ?>
-                    <div class="rotate-div">
-                        <div class="_des" id="rotateDes"><?php echo $description_benefit;?></div>
-                    </div>
-                <?php }
+                <?php
 
                 if ( !empty($heading_benefit)) { ?>
                     <h2 class="heading"><?php echo $heading_benefit;?></h2>
@@ -72,8 +37,6 @@ if ( empty($home_options['show_or_hide_section_benefit']) ) {
                 <?php }  
                 ?>
             </div>
-
-            <img class="halo-mini" src="<?php echo get_stylesheet_directory_uri();?>/images/halo-mini.png">
         </div>
     </div>
 </section>

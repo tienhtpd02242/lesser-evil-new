@@ -16,12 +16,11 @@ if ( empty($home_opts['show_or_hide_section_buy'] ) && empty( $home_opts['galler
         
         <div class="gallery">
             <?php
-            foreach ($home_opts['gallery'] as $value) { ?>
+            //foreach ($home_opts['gallery'] as $value) { ?>
                 <div class="item-gallery">
                     <img src="<?php echo $value;?>">
                 </div>
-            <?php }
-            ?>
+            <?php //} ?>
         </div>
     </div>
 </section>

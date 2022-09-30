@@ -39,31 +39,13 @@ $image_4 = $home_options['image_4_hr'];
             <div class="right-hero">
                 <?php 
                 if (!empty($image_1)) { ?>
-                    <div class="hero-img img-1 slow-move-clockwise">
+                    <div class="hero-img img-1">
                         <img src="<?php echo $image_1['url'];?>" alt="<?php echo $image_1['alt'];?>">
-                    </div>
-                <?php }
-
-                if (!empty($image_2)) { ?>
-                    <div class="hero-img img-2 slow-move-anticlockwise">
-                        <img src="<?php echo $image_2['url'];?>" alt="<?php echo $image_2['alt'];?>">
-                    </div>
-                <?php }
-
-                if (!empty($image_3)) { ?>
-                    <div class="hero-img img-3 slow-move-clockwise">
-                        <img src="<?php echo $image_3['url'];?>" alt="<?php echo $image_3['alt'];?>">
-                    </div>
-                <?php }
-
-                if (!empty($image_4)) { ?>
-                    <div class="hero-img img-4 slow-move-anticlockwise">
-                        <img src="<?php echo $image_4['url'];?>" alt="<?php echo $image_4['alt'];?>">
                     </div>
                 <?php }
                 ?>
 
-                <div class="wrap-circle">
+                <!-- <div class="wrap-circle">
                     <?php 
                     $count_icon = 9;
                     for ($i=0; $i < $count_icon ; $i++) { 
@@ -72,16 +54,7 @@ $image_4 = $home_options['image_4_hr'];
                         <?php
                     }
                     ?>
-                    <!-- <img class="cir cir-1" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-2" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-3" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-4" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-5" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-6" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-7" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-8" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-                    <img class="cir cir-9" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg"> -->
-                </div>
+                </div> -->
                     
             </div>
         </div>

@@ -173,6 +173,26 @@
             "maxlength": "",
             "rows": 3,
             "new_lines": ""
+        },
+        {
+            "key": "field_6333f30128ebd",
+            "label": "test",
+            "name": "test",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
         }
     ],
     "location": [
@@ -193,5 +213,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660631756
+    "modified": 1664349015
 }
