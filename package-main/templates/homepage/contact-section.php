@@ -46,7 +46,7 @@ if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
                 ?>
             </div>
             <div class="right-contact">
-                <?php gravity_form( 1, false, false, false, '', true, 12 ); ?>
+                <?php //gravity_form( 1, false, false, false, '', true, 12 ); ?>
             </div>
         </div>
     </div>
