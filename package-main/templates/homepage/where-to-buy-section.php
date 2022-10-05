@@ -2,8 +2,9 @@
 $home_opts = get_fields();
 
 $heading_gallery = $home_opts['heading_gallery'];
+$des_gallery = $home_opts['description_gallery'];
 
-if ( empty($home_opts['show_or_hide_section_buy'] ) && empty( $home_opts['gallery']) ) {
+if ( empty($home_opts['show_or_hide_section_buy'] ) ) {
     return;
 } 
 ?>
@@ -13,14 +14,9 @@ if ( empty($home_opts['show_or_hide_section_buy'] ) && empty( $home_opts['galler
         <?php if( !empty($heading_gallery)) : ?>
             <h2 class="heading"><?php echo $heading_gallery;?></h2>
         <?php endif; ?>
-        
-        <div class="gallery">
-            <?php
-            //foreach ($home_opts['gallery'] as $value) { ?>
-                <div class="item-gallery">
-                    <img src="<?php echo $value;?>">
-                </div>
-            <?php //} ?>
-        </div>
+
+        <?php if( !empty($des_gallery)) : ?>
+            <div class="des"><?php echo $des_gallery;?></div>
+        <?php endif; ?>
     </div>
 </section>

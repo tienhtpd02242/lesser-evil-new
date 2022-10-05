@@ -597,178 +597,163 @@
       }
     }
   }
-  .marquee-text{
-    background: #FFF21F;
-    padding: 60px 0;
-    marquee{
+  .choice-2-ss{
+    padding: 215px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    .heading{
       font-family: $font-primary;
+      font-size: 80px;
+      line-height: 100%;
       font-weight: 300;
-      font-size: 64px;
-      line-height: 76px;
-      text-transform: uppercase;
-      color: #ED1944;
-      display: block;
+      color: #FFFFFF;
+      max-width: 948px;
+      margin: 0 auto;
+      text-align: center;
     }
   }
   .where-to-buy{
-    background: #ED1944;
-    padding: 80px 0 90px;
+    background: #ffffff;
+    padding: 54px 0 64px;
     .heading{
       font-family: $font-primary;
       font-weight: 300;
-      font-size: 96px;
-      line-height: 114px;
+      font-size: 70px;
+      line-height: 94px;
       text-transform: uppercase;
       text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 56px;
+      color: #1F1F1F;
+      margin-bottom: 32px;
     }
-    .gallery{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: -32px;
-      .item-gallery{
-        width: calc(16.666% - 32px);
-        margin: 16px;
-        text-align: center;
-        img{
-          height: 114px;
-          width: auto;
-          object-fit: cover;
-        }
-      }
+    .des{
+      font-size: 32px;
+      line-height: 52px;
+      font-family: $font-primary;
+      text-align: center;
+      color: #1F1F1F;
     }
   }
   .contact-ss{
-    background: #231F20;
-    padding: 130px 0 100px;
+    background:#1EADBB;
+    padding: 100px 0 135px;
     .wrap-contact{
       display: flex;
       align-items: flex-start;
+      max-width: 1500px;
+      margin: 0 auto;
       .left-contact{
-        width: 50%;
-        font-family: $font-second;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 52px;
-        color: #FFFFFF;
-        padding-right: 50px;
+        max-width: 610px;
+        width: 100%;
         .heading{
           font-family: $font-primary;
           font-weight: 300;
-          font-size: 96px;
-          line-height: 100px;
-          text-transform: uppercase;
-          color: #FFFFFF;
-          margin: 0 0 30px;
+          font-size: 115px;
+          line-height: 100%;
+          color: #FFF11E;
+          margin: 0 0 15px;
+          span{
+            font-family: $font-primary;
+            color: #FFFFFF;
+          }
         }
         .des{
-          margin-bottom: 30px;
-        }
-        .label-contact{
-          margin: 48px 0;
           font-family: $font-second;
-          color: #FFF21F;
-          font-weight: 700;
-          font-size: 40px;
-          line-height: 52px;
-        }
-        a{
-          font-family: $font-second;
+          font-size: 19px;
+          line-height: 32px;
           font-weight: 400;
-          font-size: 40px;
-          line-height: 52px;
-          color: #FFFFFF;
-          display: block;
+          color: #ffffff;
+          max-width: 640px;
         }
-        .address{
-          margin-top: 30px;
+        img{
+          display: block;
+          margin: 60px auto 0;
         }
       }
       .right-contact{
         padding-left: 50px;
-        width: 50%;
+        width: calc(100% - 610px);
         .gform_confirmation_wrapper {
           .gform_confirmation_message{
-            font-family: $font-primary;
-            font-weight: 300;
-            font-size: 64px;
-            line-height: 76px;
-            text-transform: uppercase;
-            color: #FFFFFF;
             text-align: center;
+            font-size: 32px;
+            line-height: 52px;
+            font-family: "Londrina Solid", cursive;
+            text-align: center;
+            color: #ffffff;
           }
         }
         .gform_wrapper{
+          max-width: 630px;
+          margin-left: auto;
           &.gform_validation_error{
-            .gform_validation_errors{
-              display: none;
-            }
-            .gform_body .gform_fields .gfield{
-              .validation_message {
-                // display: none;
-                background-color: transparent;
-                border: none;
-                padding: 0;
-                font-size: 18px;
-                color: #ED1944;
-                font-family: $font-second;
+            .gform_validation_errors{display: none;}
+            .gform_body .gfield{
+              &.gfield_error{
+                .gfield_description{
+                  background: transparent;
+                  border: none;
+                  padding: 0;
+                  color: #ed1944;
+                }
               }
             }
           }
-
-          .gform_body{
+          .gform_body {
             .gform_fields{
               grid-column-gap: 0;
               grid-row-gap: 0;
-              .gfield{
-                &:not(:last-child){
-                  margin-bottom: 32px;
-                }
-                input[type="text"], input[type="email"], textarea{
-                  padding: 27px 56px;
+            }
+            .gfield{
+              margin-bottom: 18px;
+              &:last-child{margin-bottom: 0;}
+              .gfield_label{display: none;}
+              .ginput_container{
+                input{
+                  padding: 18px 22px;
+                  height: 62px;
                   font-family: $font-primary;
+                  font-size: 20px;
+                  line-height: 34px;
                   font-weight: 300;
-                  font-size: 64px;
-                  line-height: 76px;
-                  text-transform: uppercase;
-                  color: #231F20;
-                  border-radius: 0;
-                  &::placeholder{
-                    color: #D9D9D9;
-                  }
+                  color: #000000;
                 }
                 textarea{
-                  height: 420px;
+                  padding: 18px 22px;
+                  font-family: $font-primary;
+                  font-size: 20px;
+                  line-height: 34px;
+                  font-weight: 300;
+                  color: #000000;
+                  height: 200px;
                 }
               }
             }
           }
-          .gform_footer {
-            margin: 32px 0 0;
+          .gform_footer{
             padding: 0;
-            input[type="submit"]{
-              margin-bottom: 0;
-              font-family: $font-primary;
-              font-weight: 400;
-              font-size: 48px;
-              line-height: 57px;
-              display: flex;
-              align-items: center;
-              text-align: center;
-              text-transform: uppercase;
-              color: #231F20;
-              padding: 16.5px 56px;
-              background: #FFF21F;
-              min-width: 300px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border-radius: 0;
-            }
+            margin: 18px 0 0;
             img.gform_ajax_spinner {
               display: none !important;
+            }
+            input[type="submit"]{
+              border-radius: 0;
+              margin-bottom: 0;
+              background: #FFF11E;
+              width: 158px;
+              height: 64px;
+              font-size: 25px;
+              line-height: 34px;
+              font-weight: 300;
+              font-family: $font-primary;
+              color: #1EADBB;
+              text-transform: uppercase;
+              text-align: left;
+              background-image: url(../images/icon-ct.svg);
+              background-repeat: no-repeat;
+              background-position: 80% center;
+              background-size: 27px;
             }
           }
         }

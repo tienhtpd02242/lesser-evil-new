@@ -3,10 +3,7 @@ $home_opts = get_fields();
 
 $heading_contact = $home_opts['heading_contact'];
 $description_contact = $home_opts['description_contact'];
-$label_contact = $home_opts['label_contact'];
-$phone_number_contact = $home_opts['phone_number_contact'];
-$email_contact = $home_opts['email_contact'];
-$address_contact = $home_opts['address_contact'];
+$image = $home_opts['image_contact'];
 
 if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
     return;
@@ -27,26 +24,14 @@ if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
                     <div class="des"><?php echo $description_contact;?></div>
                 <?php }
 
-                if ( !empty($label_contact) ) { ?>
-                    <div class="label-contact"><?php echo $label_contact;?></div>
-                <?php }
-
-                if ( !empty($phone_number_contact) ) { ?>
-                    <a href="tel:<?php echo $phone_number_contact;?>" class="phone"><?php echo $phone_number_contact;?></a>
-                <?php }
-
-                if ( !empty($email_contact) ) { ?>
-                    <a href="mailto:<?php echo $email_contact;?>" class="mail"><?php echo $email_contact;?></a>
-                <?php }
-
-                if ( !empty($address_contact) ) { ?>
-                    <div class="address"><?php echo $address_contact;?></div>
+                if ( !empty($image) ) { ?>
+                    <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                 <?php }
 
                 ?>
             </div>
             <div class="right-contact">
-                <?php //gravity_form( 1, false, false, false, '', true, 12 ); ?>
+                <?php gravity_form( 1, false, false, false, '', true, 12 ); ?>
             </div>
         </div>
     </div>

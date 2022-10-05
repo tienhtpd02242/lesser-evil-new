@@ -1,97 +1,43 @@
 .main-footer{
-    padding: 80px 0 90px;
     color: #ffffff;
-    background-color: $second-color;
+    background-color: #ffffff;
     position: relative;
-
-    .line-ft{
-        width: 100%;
-        height: 40px;
-        background-image: url(../images/line-ft.png);
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
-    }
-    .wrap{
-        text-align: center;
-    }
-    .logo-ft{
-        img{height: 200px;width: auto;}
-    }
-    .last-col{
-        margin-top: 38px;
-        ul{
-            list-style: none;
+    .top-ft{
+        background-color: #ffffff;
+        padding: 100px 0 80px;
+        .wrap{
             display: flex;
-            justify-content: center;
-            margin-top: 32px;
-            li{
-                &:not(:last-child){
-                    margin-right: 32px;
+            align-items: center;
+            justify-content: space-between;
+            .right-top{
+                display: flex;
+                .address{
+                    font-family: $font-second;
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    color: #000000;
+                    margin-right: 100px;
                 }
-                a{
-                    width: 50px;
-                    height: 50px;
-                    background: #ffffff;
+                ._contact{
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 100%;
-                    color: $primary-color;
-                    position: relative;
-                    &:before{
-                        content: "";
-                        width: 54px;
-                        height: 19px;
-                        background-image: url(../images/icon/hola-mini.svg);
-                        background-size: cover;
-                        position: absolute;
-                        top: -10px;
-                        left: -3px;
+                    flex-direction: column;
+                    a{
+                        font-family: $font-second;
+                        font-size: 22px;
+                        line-height: 32px;
+                        font-weight: 500;
+                        color: #000000;
                     }
                 }
             }
         }
-        .copy-r{
-            font-family: $font-second;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            text-align: center;
-            color: #FFFFFF;
-            span{
-                font-size: 16px;
-                display: block;
-                margin-top: 2px;
-            }
-        }
-    }
-
-    @media (max-width: 1300.98px){
-        padding: 80px 0 48px;
-    }
-    @media (max-width: $mobile-smaller){
-        .logo-ft img{
-            height: 110px;
-        }
-        .last-col{
-            margin-top: 24px;
-            ul li a{
-                width: 36px;
-                height: 36px;
-                &:before{
-                    width: 36px;
-                    height: 12px;
-                    top: -5px;
-                    left: 0px;
-                }
-                svg{
-                    height: 18px;
-                }
-            }
+        .heading{
+            font-family: $font-primary;
+            font-size: 55px;
+            line-height: 58px;
+            font-weight: 300;
+            color: #ED1944;
         }
     }
 }
