@@ -15,50 +15,59 @@
 <?php 
 $global_opts = get_fields('option');
 
-$center_column = $global_opts['center_column'];
-$logo_footer   = $global_opts['logo_footer'];
-$copyright     = $global_opts['copyright'];
-$list_social_glb = $global_opts['list_social_glb'];
+$heading = $global_opts['heading_ft'];
+$address = $global_opts['address'];
+
+$phone = $global_opts['phone'];
+$email = $global_opts['email'];
+
+$logo_footer = $global_opts['logo_footer'];
 ?>
 
 <footer class="main-footer">
-    <div class="line-ft">
-        
-    </div>
+    <div class="top-ft">
+        <div class="container">
+            <div class="wrap">
+                <?php if ($heading) {
+                    echo '<div class="heading">'. $heading .'</div>';
+                } ?>
 
-	<div class="container">
-        <div class="wrap">
-            <div class="logo-ft">
-                <?php 
-                if ( !empty($logo_footer) ) { ?>
-                    <a href="<?php echo home_url();?>">
-                        <img src="<?php echo $logo_footer['url'];?>" alt="<?php echo $logo_footer['alt'];?>">
-                    </a>
-                <?php }
-                ?>
-                
+                <div class="right-top">
+                    <?php if ($address) {
+                        echo '<div class="address">'. $address .'</div>';
+                    } ?>
+                    <div class="_contact">
+                        <?php if ($phone) {
+                            echo '<a class="tel" href="tel:'. $phone .'">'. $phone .'</a>';
+                        } ?>
+                        <?php if ($email) {
+                            echo '<a class="mail" href="mailto: '. $email .'">'. $email .'</a>';
+                        } ?>
+                    </div>
+                </div>
             </div>
-
-            <div class="last-col">
-                <?php 
-                    if ( !empty($copyright) ) { ?>
-                        <div class="copy-r"><?php echo $copyright;?></div>
-                    <?php }
-
-                    if ( !empty($list_social_glb)) {
-                        echo "<ul>";
-                        foreach ($list_social_glb as $value) { ?>
-                            <li>
-                                <a href="<?php echo $value['url'];?>" target="_blank" rel="nofollow"><?php echo $value['icon'];?></a>
-                            </li>
-                        <?php }
-                        echo "</ul>";
-                    }
-                ?>
-            </div>
-
         </div>
-	</div><!-- .container -->
+    </div>
+    <div class="bottom-ft">
+        <div class="container">
+            <div class="wrap">
+                <div class="logo-ft">
+                    <?php 
+                    if ( !empty($logo_footer) ) { ?>
+                        <a href="<?php echo home_url();?>">
+                            <img src="<?php echo $logo_footer['url'];?>" alt="<?php echo $logo_footer['alt'];?>">
+                        </a>
+                    <?php }
+                    ?>
+                    
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+	
 </footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
