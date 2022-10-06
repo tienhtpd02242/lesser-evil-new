@@ -41,16 +41,16 @@ $image_1 = $home_options['image_1_hr'];
                 <?php }
                 ?>
 
-                <!-- <div class="wrap-circle">
+                <div class="wrap-circle">
                     <?php 
-                    $count_icon = 9;
+                    $count_icon = 25;
                     for ($i=0; $i < $count_icon ; $i++) { 
                         ?>
                             <img class="cir cir-<?php echo $i + 1;?>" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
                         <?php
                     }
                     ?>
-                </div> -->
+                </div>
                     
             </div>
         </div>
