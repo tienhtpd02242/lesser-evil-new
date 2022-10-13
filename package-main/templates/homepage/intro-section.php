@@ -11,6 +11,17 @@ if ( empty($home_options['show_or_hide_section_intro']) ) {
 }
 ?>
 <section class="intro-ss" <?php echo !empty($image) ? 'style="background-image: url('. $image["url"] .');"' : '';?>>
+    <div class="wrap-circle">
+        <?php 
+        $count_icon = 10;
+        for ($i=0; $i < $count_icon ; $i++) { 
+            ?>
+                <img class="cir cir-<?php echo $i + 1;?>" src="<?php echo get_stylesheet_directory_uri();?>/images/circle-gray.svg">
+            <?php
+        }
+        ?>
+    </div>
+    
     <div class="container">
         <div class="wrap">
             <div class="left-intro">

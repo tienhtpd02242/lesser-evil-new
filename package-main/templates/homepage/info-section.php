@@ -12,6 +12,16 @@ if ( empty($home_options['show_or_hide_info_section']) ) {
 ?>
 
 <section class="info-section">
+    <div class="wrap-circle">
+        <?php 
+        $count_icon = 10;
+        for ($i=0; $i < $count_icon ; $i++) { 
+            ?>
+                <img class="cir cir-<?php echo $i + 1;?>" src="<?php echo get_stylesheet_directory_uri();?>/images/circle-yellow.svg">
+            <?php
+        }
+        ?>
+    </div>
     <div class="container">
         <div class="wrap">
             <div class="info">

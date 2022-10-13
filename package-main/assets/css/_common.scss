@@ -34,6 +34,7 @@
     align-items: flex-start;
     justify-content: space-evenly;
     z-index: -3;
+    overflow: hidden;
     .cir{
       transition: .3s ease all;
       animation: 6s rainToDown infinite linear;
