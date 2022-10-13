@@ -140,4 +140,39 @@
             }
         }
     }
+
+    @media (max-width: 1500.98px){
+        .top-ft {
+            .heading{
+                font-size: 48px;
+                line-height: 56px;
+            }
+            .wrap .right-top {
+                .address{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                ._contact a{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .bottom-ft .wrap {
+            align-items: flex-start;
+            .logo-ft {
+                img{
+                    height: 120px;
+                }
+                .bottom-heading{
+                    font-size: 38px;
+                    line-height: 42px;
+                }
+                .copyright{
+                    margin-top: 64px;
+                }
+            }
+        }
+
+    }
 }
