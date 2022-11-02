@@ -36,7 +36,9 @@ if ( empty($home_options['show_or_hide_section_fla']) ) {
                         <div class="item-fla">
                             <?php 
                             if ( !empty( $value['image'])) {
-                                echo "<img src='". $value['image'] ."' />";
+                                echo "<div class='img'>";
+                                    echo "<img src='". $value['image'] ."' />";
+                                echo '</div>';
                             } 
 
                             if ( !empty( $value['description'])) { ?>

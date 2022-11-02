@@ -72,8 +72,8 @@
                     max-width: 590px;
                 }
                 img{
-                    height: 157px;
-                    width: auto;
+                    height: auto;
+                    width: 114px;
                     display: block;
                 }
                 .bottom-heading{
@@ -174,5 +174,11 @@
             }
         }
 
+    }
+
+    @media (max-width: 1024.98px){
+        .bottom-ft .wrap .logo-ft{
+            padding-right: 40px;
+        }
     }
 }
