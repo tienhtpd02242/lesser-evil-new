@@ -1,41 +1,47 @@
-.site-header{
-    background: $primary-color;
+body .site-header {
+    background: transparent;
     padding: 32px 0 0;
-    .wrap{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    .wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
         .__logo {
-            a{display: block;}
-            img{
+            a {
+                display: block;
+            }
+            img {
                 height: 105px;
                 width: auto;
             }
         }
-        .__right{
+        .__right {
             display: flex;
             align-items: flex-end;
-            ._cta{
-                background-color: #FFFFFF;
-                color: #000000;
+            ._cta {
+                background-color: #ffffff;
+                color: $primary-color;
                 font-family: $font-primary;
                 margin-left: 36px;
-                font-weight: 400;
+                font-weight: 300;
                 font-size: 24px;
                 line-height: 28px;
                 border: none;
-                &:hover{
-                    background-color: #FFF21F;
+                &:hover {
+                    background-color: #fff21f;
+                    color: #000000;
                 }
             }
-            ul{
+            ul {
                 list-style: none;
                 display: flex;
-                li{
-                    &:not(:last-child){
+                li {
+                    &:not(:last-child) {
                         margin-right: 10px;
                     }
-                    a{
+                    a {
                         width: 52px;
                         height: 52px;
                         background: #ffffff;
@@ -45,9 +51,11 @@
                         border-radius: 100%;
                         color: $primary-color;
                         position: relative;
-                        i.fa{font-size: 20px;}
+                        i.fa {
+                            font-size: 20px;
+                        }
 
-                        &:before{
+                        &:before {
                             content: "";
                             width: 54px;
                             height: 19px;
@@ -63,24 +71,24 @@
         }
     }
 
-    @media (max-width: 1500.98px){
+    @media (max-width: 1500.98px) {
         padding: 16px 0 0;
-        .wrap{
-            .__logo img{
+        .wrap {
+            .__logo img {
                 height: 80px;
             }
             .__right {
                 align-items: center;
-                ul li a{
+                ul li a {
                     width: 40px;
                     height: 40px;
-                    &:before{
+                    &:before {
                         width: 42px;
                         height: 14px;
                         top: -6px;
                         left: -1px;
                     }
-                    svg{
+                    svg {
                         width: auto;
                         height: 22px;
                     }

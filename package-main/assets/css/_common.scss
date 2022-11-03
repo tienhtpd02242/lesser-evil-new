@@ -1,93 +1,260 @@
 .btn-cm {
-    display: inline-block;
-    padding: 13.5px 38px;
-    border: 5px solid #000000;
-    text-align: center;
-    font-family: $font-primary;
+  display: inline-block;
+  padding: 19.5px 39px;
+  border: none;
+  text-align: center;
+  font-family: $font-primary;
+  font-size: 24px;
+  line-height: 32px;
+  @media (max-width: 1300.98px) {
     font-size: 24px;
     line-height: 32px;
-    @media (max-width: 1300.98px){
-        font-size: 24px;
-        line-height: 32px;
-    }
-    @media (max-width: $mobile-smaller){
-        font-size: 18px;
-        line-height: 24px;
-        padding: 8px 12px;
-    }
-}
-
-.slow-move-clockwise{
-    animation: slow-move-clockwise 15s cubic-bezier(.41,.17,.57,.79) infinite both;
-}
-.slow-move-anticlockwise{
-    animation: slow-move-anticlockwise 20s cubic-bezier(.41,.17,.57,.79) infinite both;
-}
-
-.wrap-circle{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    z-index: -3;
-    overflow: hidden;
-    .cir{
-      transition: .3s ease all;
-      animation: 6s rainToDown infinite linear;
-      opacity: 0;
-    }
-    .cir-1, .cir-11, .cir-25{
-      width: 27px;
-      animation-delay: 3s;
-    }
-    .cir-2, .cir-10, .cir-23{
-      width: 49px;
-      animation-delay: 1s;
-    }
-    .cir-3, .cir-15, .cir-24{
-      width: 52px;
-      animation-delay: 2s;
-    }
-    .cir-4, .cir-12, .cir-18{
-      width: 48px;
-      animation-delay: 4s;
-    }
-    .cir-5, .cir-13, .cir-21{
-      width: 48px;
-      animation-delay: 5s;
-    }
-    .cir-6, .cir-17, .cir-16{
-      width: 27px;
-      animation-delay: 8s;
-    }
-    .cir-7, .cir-20, .cir-14{
-      width: 27px;
-      animation-delay: 6s;
-    }
-    .cir-8, .cir-22{
-      width: 27px;
-      animation-delay: 7s;
-    }
-    .cir-9, .cir-19{
-      width: 48px;
-      animation-delay: 3s;
-    }
   }
+  @media (max-width: $mobile-smaller) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 12px;
+  }
+}
 
-@media (max-width: 1024.98px){
-  .wrap-circle{
-    .cir-3, .cir-15, .cir-24{
+.slow-move-clockwise {
+  animation: slow-move-clockwise 15s cubic-bezier(0.41, 0.17, 0.57, 0.79) infinite both;
+}
+.slow-move-anticlockwise {
+  animation: slow-move-anticlockwise 20s cubic-bezier(0.41, 0.17, 0.57, 0.79) infinite both;
+}
+
+.wrap-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  z-index: -3;
+  overflow: hidden;
+  .cir {
+    transition: 0.3s ease all;
+    animation: 6s rainToDown infinite linear;
+    opacity: 0;
+  }
+  .cir-1,
+  .cir-11,
+  .cir-25 {
+    width: 27px;
+    animation-delay: 3s;
+  }
+  .cir-2,
+  .cir-10,
+  .cir-23 {
+    width: 49px;
+    animation-delay: 1s;
+  }
+  .cir-3,
+  .cir-15,
+  .cir-24 {
+    width: 52px;
+    animation-delay: 2s;
+  }
+  .cir-4,
+  .cir-12,
+  .cir-18 {
+    width: 48px;
+    animation-delay: 4s;
+  }
+  .cir-5,
+  .cir-13,
+  .cir-21 {
+    width: 48px;
+    animation-delay: 5s;
+  }
+  .cir-6,
+  .cir-17,
+  .cir-16 {
+    width: 27px;
+    animation-delay: 8s;
+  }
+  .cir-7,
+  .cir-20,
+  .cir-14 {
+    width: 27px;
+    animation-delay: 6s;
+  }
+  .cir-8,
+  .cir-22 {
+    width: 27px;
+    animation-delay: 7s;
+  }
+  .cir-9,
+  .cir-19 {
+    width: 48px;
+    animation-delay: 3s;
+  }
+}
+
+@media (max-width: 1024.98px) {
+  .wrap-circle {
+    .cir-3,
+    .cir-15,
+    .cir-24 {
       width: 40px;
     }
-    .cir-2, .cir-10, .cir-23, .cir-4, .cir-12, .cir-18, .cir-5, .cir-13, .cir-21,.cir-9, .cir-19{
+    .cir-2,
+    .cir-10,
+    .cir-23,
+    .cir-4,
+    .cir-12,
+    .cir-18,
+    .cir-5,
+    .cir-13,
+    .cir-21,
+    .cir-9,
+    .cir-19 {
       width: 32px;
     }
-    .cir-1, .cir-11, .cir-25, .cir-6, .cir-17, .cir-16, .cir-7, .cir-20, .cir-14, .cir-8, .cir-22{
+    .cir-1,
+    .cir-11,
+    .cir-25,
+    .cir-6,
+    .cir-17,
+    .cir-16,
+    .cir-7,
+    .cir-20,
+    .cir-14,
+    .cir-8,
+    .cir-22 {
       width: 18px;
     }
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.tada {
+  -webkit-animation-name: tada;
+  -moz-animation-name: tada;
+  -o-animation-name: tada;
+  animation-name: tada;
+}
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+  }
+}
+
+@-moz-keyframes tada {
+  0% {
+    -moz-transform: scale(1);
+  }
+  10%,
+  20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -moz-transform: scale(1) rotate(0);
+  }
+}
+
+@-o-keyframes tada {
+  0% {
+    -o-transform: scale(1);
+  }
+  10%,
+  20% {
+    -o-transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -o-transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -o-transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -o-transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+  10%,
+  20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

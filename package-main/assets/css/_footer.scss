@@ -1,13 +1,13 @@
-.main-footer{
+.main-footer {
     color: #ffffff;
     background-color: #ffffff;
     position: relative;
-    .top-ft{
+    .top-ft {
         background-color: #ffffff;
         padding: 100px 0 80px;
         position: relative;
         z-index: 1;
-        &::before{
+        &::before {
             content: "";
             background-image: url(../images/bg-ft-top.png);
             width: 100%;
@@ -20,13 +20,13 @@
             background-position: center;
             z-index: -1;
         }
-        .wrap{
+        .wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .right-top{
+            .right-top {
                 display: flex;
-                .address{
+                .address {
                     font-family: $font-second;
                     font-size: 22px;
                     line-height: 32px;
@@ -34,10 +34,10 @@
                     color: #000000;
                     margin-right: 100px;
                 }
-                ._contact{
+                ._contact {
                     display: flex;
                     flex-direction: column;
-                    a{
+                    a {
                         font-family: $font-second;
                         font-size: 22px;
                         line-height: 32px;
@@ -47,43 +47,46 @@
                 }
             }
         }
-        .heading{
+        .heading {
             font-family: $font-primary;
             font-size: 55px;
             line-height: 58px;
             font-weight: 300;
-            color: #ED1944;
+            color: #ed1944;
         }
     }
 
-    .bottom-ft{
-        background-color: #FFF11E;
+    .bottom-ft {
+        background-color: #fff11e;
         padding-top: 110px;
         padding-bottom: 60px;
-        .wrap{
+        .wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .logo-ft{
+            .logo-ft {
                 display: flex;
                 align-items: flex-start;
-                .content-bt{
+                a {
+                    margin-top: -30px;
+                }
+                .content-bt {
                     padding-left: 52px;
                     max-width: 590px;
                 }
-                img{
+                img {
                     height: auto;
                     width: 114px;
                     display: block;
                 }
-                .bottom-heading{
+                .bottom-heading {
                     font-size: 55px;
                     line-height: 58px;
                     font-weight: 300;
                     font-family: $font-primary;
-                    color: #1F1F1F;
+                    color: #1f1f1f;
                 }
-                .copyright{
+                .copyright {
                     font-family: $font-second;
                     font-weight: 500;
                     font-size: 16px;
@@ -92,9 +95,9 @@
                     margin-top: 100px;
                 }
             }
-            .social{
+            .social {
                 display: flex;
-                ._menu a{
+                ._menu a {
                     display: block;
                     font-family: $font-second;
                     font-size: 18px;
@@ -102,26 +105,26 @@
                     font-weight: 500;
                     color: #000000;
                 }
-                ul{
+                ul {
                     display: flex;
                     list-style: none;
                     margin-left: 80px;
-                    li{
+                    li {
                         list-style: none;
                         &:not(:last-child) {
                             margin-right: 10px;
                         }
-                        a{
+                        a {
                             width: 52px;
                             height: 52px;
-                            background: #ED1944;
+                            background: #ed1944;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             border-radius: 100%;
-                            color: #E7104C;
+                            color: #e7104c;
                             position: relative;
-                            &::before{
+                            &::before {
                                 content: "";
                                 width: 54px;
                                 height: 19px;
@@ -131,7 +134,7 @@
                                 top: -13px;
                                 left: -3px;
                             }
-                            svg path{
+                            svg path {
                                 fill: #ffffff;
                             }
                         }
@@ -141,18 +144,18 @@
         }
     }
 
-    @media (max-width: 1500.98px){
+    @media (max-width: 1500.98px) {
         .top-ft {
-            .heading{
+            .heading {
                 font-size: 48px;
                 line-height: 56px;
             }
             .wrap .right-top {
-                .address{
+                .address {
                     font-size: 18px;
                     line-height: 24px;
                 }
-                ._contact a{
+                ._contact a {
                     font-size: 18px;
                     line-height: 24px;
                 }
@@ -161,23 +164,22 @@
         .bottom-ft .wrap {
             align-items: flex-start;
             .logo-ft {
-                img{
+                img {
                     height: 120px;
                 }
-                .bottom-heading{
+                .bottom-heading {
                     font-size: 38px;
                     line-height: 42px;
                 }
-                .copyright{
+                .copyright {
                     margin-top: 64px;
                 }
             }
         }
-
     }
 
-    @media (max-width: 1024.98px){
-        .bottom-ft .wrap .logo-ft{
+    @media (max-width: 1024.98px) {
+        .bottom-ft .wrap .logo-ft {
             padding-right: 40px;
         }
     }

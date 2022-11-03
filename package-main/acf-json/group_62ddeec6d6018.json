@@ -693,6 +693,30 @@
                     "mime_types": ""
                 },
                 {
+                    "key": "field_636384f786ec6",
+                    "label": "Fruit",
+                    "name": "fruit",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_63355b0966c67",
                     "label": "Color",
                     "name": "color",
@@ -718,7 +742,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "60",
+                        "width": "40",
                         "class": "",
                         "id": ""
                     },
@@ -1231,5 +1255,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664977296
+    "modified": 1667466545
 }
