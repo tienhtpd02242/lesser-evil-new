@@ -1145,6 +1145,13 @@
     .choice-ss .container .img-big {
       height: 520px;
     }
+    .intro-ss{
+      background-size: cover;
+      .left-intro{
+        margin-left: -16px;
+        padding-left: 16px;
+      }
+    }
     .intro2-ss {
       .left-intro {
         max-width: 50%;
@@ -1178,23 +1185,46 @@
       }
       .wrap {
         grid-template-columns: 1fr;
+        grid-gap: 110px;
       }
       .info {
+        position: relative;
+        justify-content: center;
         &:after {
           content: "";
           height: 12px;
           width: 100%;
-          background-image: url(../images/layer-yellow.png);
+          background-image: url(../images/layer-yellow-mb.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+          position: absolute;
+          bottom: -56px;
         }
         &.col-2 {
-          &:before,
-          &:after {
+          &:before{
             display: none;
           }
+          &:after{
+            content: "";
+            height: 12px;
+            width: 100%;
+            background-image: url(../images/layer-yellow-mb.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: -75px;
+            top: inherit;
+            right: inherit;
+          }
+          .small .sub2{
+            max-width: 175px;
+          }
         }
+      }
+      .pros .pro{
+        justify-content: center;
       }
     }
   }

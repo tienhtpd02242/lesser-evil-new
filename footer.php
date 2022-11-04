@@ -102,6 +102,12 @@ $list_social_glb = $global_opts['list_social_glb'];
                     ?>
                 </div>
 
+                <?php 
+                if ( !empty($copyright) ) { ?>
+                    <div class="copyright"><?php echo $copyright;?></div>
+                <?php }
+                ?>
+
             </div>
         </div>
     </div>
