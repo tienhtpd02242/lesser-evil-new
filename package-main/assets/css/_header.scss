@@ -17,6 +17,7 @@ body .site-header {
                 width: auto;
             }
         }
+        .__toggle-menu{display: none;}
         .__right {
             display: flex;
             align-items: flex-end;
@@ -93,6 +94,35 @@ body .site-header {
                         height: 22px;
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: $mobile-smaller){
+        .wrap {
+            justify-content: center;
+            .__toggle-menu{
+                width: 50px;
+                height: 50px;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                right: 32px;
+                cursor: pointer;
+                span{
+                    height: 4px;
+                    width: 32px;
+                    background-color: #e7104c;
+                    &:nth-child(2){
+                        margin: 6px 0;
+                    }
+                }
+            }
+            .__right{
+                display: none;
             }
         }
     }

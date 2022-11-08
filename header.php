@@ -34,6 +34,11 @@ $list_social_glb = $global_opts['list_social_glb'];
                 <div class="__logo">
                     <?php the_custom_logo();?>
                 </div>
+                <div class="__toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="__right">
 
                     <?php 

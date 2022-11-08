@@ -533,6 +533,7 @@
       max-width: 665px;
       width: 100%;
       padding: 170px 0 250px;
+      z-index: 9;
     }
     .heading {
       font-family: $font-primary;
@@ -1120,7 +1121,7 @@
     .benefit-ss .content {
       max-width: 450px;
       padding: 80px 0 80px 24px;
-      margin-right: -16px;
+      margin-right: -32px;
       &:before {
         width: 80px;
         left: -80px;
@@ -1148,8 +1149,8 @@
     .intro-ss{
       background-size: cover;
       .left-intro{
-        margin-left: -16px;
-        padding-left: 16px;
+        margin-left: -32px;
+        padding-left: 32px;
       }
     }
     .intro2-ss {
@@ -1225,6 +1226,51 @@
       }
       .pros .pro{
         justify-content: center;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-bigger){
+    .hero-ss {
+      .wrap{
+        flex-direction: column-reverse;
+      }
+      .left-hero{
+        max-width: 100%;
+      }
+      .right-hero{
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+    .intro-ss {
+      .wrap-circle{
+        width: 100%;
+      }
+      .left-intro{
+        max-width: 100%;
+      }
+    }
+    .choice-ss {
+      .wrap-choice{
+        max-width: 100%;
+        padding-bottom: 430px;
+      }
+      .container .img-big{
+        height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .contact-ss .wrap-contact{
+      flex-direction: column;
+      .left-contact{
+        max-width: 100%;
+      }
+      .right-contact{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 75px;
       }
     }
   }

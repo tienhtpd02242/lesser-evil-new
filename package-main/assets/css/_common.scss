@@ -44,53 +44,53 @@
   .cir-11,
   .cir-25 {
     width: 27px;
-    animation-delay: 3s;
+    animation-delay: 3s !important;
   }
   .cir-2,
   .cir-10,
   .cir-23 {
     width: 49px;
-    animation-delay: 1s;
+    animation-delay: 1s !important;
   }
   .cir-3,
   .cir-15,
   .cir-24 {
     width: 52px;
-    animation-delay: 2s;
+    animation-delay: 2s !important;
   }
   .cir-4,
   .cir-12,
   .cir-18 {
     width: 48px;
-    animation-delay: 4s;
+    animation-delay: 4s !important;
   }
   .cir-5,
   .cir-13,
   .cir-21 {
     width: 48px;
-    animation-delay: 5s;
+    animation-delay: 5s !important;
   }
   .cir-6,
   .cir-17,
   .cir-16 {
     width: 27px;
-    animation-delay: 8s;
+    animation-delay: 8s !important;
   }
   .cir-7,
   .cir-20,
   .cir-14 {
     width: 27px;
-    animation-delay: 6s;
+    animation-delay: 6s !important;
   }
   .cir-8,
   .cir-22 {
     width: 27px;
-    animation-delay: 7s;
+    animation-delay: 7s !important;
   }
   .cir-9,
   .cir-19 {
     width: 48px;
-    animation-delay: 3s;
+    animation-delay: 3s !important;
   }
 }
 
@@ -127,6 +127,11 @@
     .cir-22 {
       width: 18px;
     }
+  }
+}
+@media (max-width: 767.98px){
+  .wrap-circle .cir{
+    animation: 6s rainToDownMb infinite linear;
   }
 }
 

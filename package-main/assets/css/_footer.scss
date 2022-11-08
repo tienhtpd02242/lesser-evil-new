@@ -234,4 +234,12 @@
             }
         }
     }
+    @media (max-width: $mobile-bigger){
+        .top-ft .wrap{
+            flex-direction: column;
+            .right-top{
+                margin-top: 32px;
+            }
+        }
+    }
 }
