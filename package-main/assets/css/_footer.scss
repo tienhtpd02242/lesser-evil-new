@@ -62,7 +62,6 @@
         padding-bottom: 60px;
         .wrap {
             display: flex;
-            align-items: center;
             justify-content: space-between;
             > .copyright{
                 display: none;
@@ -106,6 +105,7 @@
             }
             .social {
                 display: flex;
+                padding-top: 32px;
                 ._menu a {
                     display: block;
                     font-family: $font-second;
@@ -218,6 +218,9 @@
                         text-align: center;
                         margin-top: 36px;
                     }
+                    .content-bt{
+                        padding-left: 0;
+                    }
                 }
                 .social{
                     width: 100%;
@@ -239,6 +242,21 @@
             flex-direction: column;
             .right-top{
                 margin-top: 32px;
+            }
+        }
+    }
+    @media (max-width: $mobile-smaller){
+        .top-ft {
+            padding: 48px 0 60px;
+            .wrap .right-top{
+                flex-direction: column;
+                text-align: center;
+                .address{
+                    margin-right: 0;
+                }
+                ._contact{
+                    margin-top: 40px;
+                }
             }
         }
     }

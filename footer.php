@@ -74,9 +74,6 @@ $list_social_glb = $global_opts['list_social_glb'];
                             <div class="copyright"><?php echo $copyright;?></div>
                         <?php }
                     echo "</div>";
-
-
-
                     ?>
                 </div>
 

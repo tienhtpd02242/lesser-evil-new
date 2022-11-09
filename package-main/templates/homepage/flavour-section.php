@@ -39,7 +39,7 @@ if (empty($home_options['show_or_hide_section_fla'])) {
                                 echo "<div class='img'>";
                                 echo "<img src='" . $value['image'] . "' class='can' />";
                                 if (!empty($value['fruit'])) {
-                                    echo "<img src='" . $value['fruit'] . "' class='fruit animated' />";
+                                    echo "<img src='" . $value['fruit'] . "' class='fruit tada' />";
                                 }
                                 echo '</div>';
                             }

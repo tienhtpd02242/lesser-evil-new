@@ -8,6 +8,7 @@ $cta_text_benefit = $home_options['cta_text_benefit'];
 $cta_url_benefit = $home_options['cta_url_benefit'];
 
 $image_1 = $home_options['image_1_bnf'];
+$image_1_mb = $home_options['image_1_bnf_mb'];
 
 if ( empty($home_options['show_or_hide_section_benefit']) ) {
     return;
@@ -27,7 +28,11 @@ if ( empty($home_options['show_or_hide_section_benefit']) ) {
     </div>
     <div class="container">
         <div class="wrap">
-            
+            <?php 
+            if( !empty($image_1_mb) ){ ?>
+                <img class="img-mb" src="<?php echo $image_1_mb['url'];?>"></img>
+            <?php }
+            ?>
             <div class="content">
                 <?php
 

@@ -24,6 +24,12 @@ if ( empty($home_options['show_or_hide_section_intro']) ) {
     
     <div class="container">
         <div class="wrap">
+            <?php 
+                if( !empty($image) ){ ?>
+                    <img class="img-mb" src="<?php echo $image['url'];?>">
+                <?php }
+            ?>
+
             <div class="left-intro">
                 <?php 
 

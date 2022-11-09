@@ -11,7 +11,7 @@ if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
 ?>
 
 <section class="contact-ss">
-    <div class="wrap-circle">
+    <!-- <div class="wrap-circle">
         <?php 
         $count_icon = 20;
         for ($i=0; $i < $count_icon ; $i++) { 
@@ -20,7 +20,7 @@ if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
             <?php
         }
         ?>
-    </div>
+    </div> -->
     <div class="container">
         <div class="wrap-contact">
             <div class="left-contact">
