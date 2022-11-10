@@ -79,6 +79,7 @@
                 }
                 .content-bt {
                     padding-left: 52px;
+                    padding-right: 24px;
                     max-width: 590px;
                 }
                 img {
@@ -184,6 +185,12 @@
         }
     }
 
+    @media (max-width: 1336.98px){
+        .bottom-ft .wrap .social{
+            padding-top: 0;
+        }
+    }
+
     @media (max-width: 1024.98px) {
         .top-ft .wrap .right-top .address{
             margin-right: 36px;
@@ -220,6 +227,7 @@
                     }
                     .content-bt{
                         padding-left: 0;
+                        padding-right: 0;
                     }
                 }
                 .social{

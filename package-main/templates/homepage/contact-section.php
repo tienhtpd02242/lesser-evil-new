@@ -13,12 +13,12 @@ if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
 <section class="contact-ss">
     <!-- <div class="wrap-circle">
         <?php 
-        $count_icon = 20;
-        for ($i=0; $i < $count_icon ; $i++) { 
-            ?>
-                <img class="cir cir-<?php echo $i + 1;?>" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
-            <?php
-        }
+        // $count_icon = 20;
+        // for ($i=0; $i < $count_icon ; $i++) { 
+        //     ?>
+        //         <img class="cir cir-<?php echo $i + 1;?>" src="<?php echo get_stylesheet_directory_uri();?>/images/circle.svg">
+        //     <?php
+        // }
         ?>
     </div> -->
     <div class="container">
