@@ -5,13 +5,14 @@ $heading_intro = $home_options['heading_intro'];
 $des_inf = $home_options['des_inf'];
 
 $image = $home_options['image_1_intro'];
+$image_mb = $home_options['image_1_intro_mb'];
 
 if ( empty($home_options['show_or_hide_section_intro']) ) {
     return;
 }
 ?>
 <section class="intro-ss" <?php echo !empty($image) ? 'style="background-image: url('. $image["url"] .');"' : '';?>>
-    <div class="wrap-circle">
+    <!-- <div class="wrap-circle">
         <?php 
         $count_icon = 10;
         for ($i=0; $i < $count_icon ; $i++) { 
@@ -20,13 +21,13 @@ if ( empty($home_options['show_or_hide_section_intro']) ) {
             <?php
         }
         ?>
-    </div>
+    </div> -->
     
     <div class="container">
         <div class="wrap">
             <?php 
-                if( !empty($image) ){ ?>
-                    <img class="img-mb" src="<?php echo $image['url'];?>">
+                if( !empty($image_mb) ){ ?>
+                    <img class="img-mb" src="<?php echo $image_mb['url'];?>">
                 <?php }
             ?>
 

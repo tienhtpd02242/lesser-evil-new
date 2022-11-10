@@ -16,7 +16,7 @@ if ( empty($home_options['show_or_hide_section_benefit']) ) {
 ?>
 
 <section class="benefit-ss" <?php echo ($image_1) ? 'style="background-image: url('. $image_1['url'] .')";' : '';?>>
-    <div class="wrap-circle">
+    <!-- <div class="wrap-circle">
         <?php 
         $count_icon = 15;
         for ($i=0; $i < $count_icon ; $i++) { 
@@ -25,7 +25,7 @@ if ( empty($home_options['show_or_hide_section_benefit']) ) {
             <?php
         }
         ?>
-    </div>
+    </div> -->
     <div class="container">
         <div class="wrap">
             <?php 

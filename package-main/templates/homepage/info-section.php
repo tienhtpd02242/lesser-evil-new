@@ -12,7 +12,7 @@ if ( empty($home_options['show_or_hide_info_section']) ) {
 ?>
 
 <section class="info-section">
-    <div class="wrap-circle">
+    <!-- <div class="wrap-circle">
         <?php 
         $count_icon = 10;
         for ($i=0; $i < $count_icon ; $i++) { 
@@ -21,7 +21,7 @@ if ( empty($home_options['show_or_hide_info_section']) ) {
             <?php
         }
         ?>
-    </div>
+    </div> -->
     <div class="container">
         <div class="wrap">
             <div class="info">

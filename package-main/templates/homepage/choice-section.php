@@ -2,6 +2,7 @@
 $home_options = get_fields();
 
 $image_choice = $home_options['image_choice'];
+$image_choice_mb = $home_options['image_choice_mb'];
 $heading_choice = $home_options['heading_choice'];
 $faqs_list = $home_options['faqs_list'];
 
@@ -15,6 +16,10 @@ if ( empty($home_options['show_or_hide_section_choice']) ) {
         <?php 
         if (!empty($image_choice)) { ?>
             <img class="img-big" src="<?php echo $image_choice;?>">
+        <?php }
+
+        if (!empty($image_choice_mb)) { ?>
+            <img class="img-mb" src="<?php echo $image_choice_mb;?>">
         <?php }
         ?>
         <div class="wrap-choice">

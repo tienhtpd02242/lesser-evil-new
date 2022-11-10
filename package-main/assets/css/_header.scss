@@ -184,4 +184,10 @@ body .site-header {
             }
         }
     }
+
+    @media (max-width: 429.98px){
+        .wrap .__toggle-menu{
+            right: 16px;
+        }
+    }
 }

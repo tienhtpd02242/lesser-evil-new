@@ -37,7 +37,7 @@
   overflow: hidden;
   .cir {
     transition: 0.3s ease all;
-    animation: 6s rainToDown infinite linear;
+    animation: 10s rainToDown infinite linear;
     opacity: 0;
   }
   .cir-1,
@@ -130,8 +130,38 @@
   }
 }
 @media (max-width: 767.98px){
-  .wrap-circle .cir{
-    animation: 6s rainToDownMb infinite linear;
+  .wrap-circle {
+    .cir-3,
+    .cir-15,
+    .cir-24 {
+      width: 24px;
+    }
+    .cir-2,
+    .cir-10,
+    .cir-23,
+    .cir-4,
+    .cir-12,
+    .cir-18,
+    .cir-5,
+    .cir-13,
+    .cir-21,
+    .cir-9,
+    .cir-19 {
+      width: 16px;
+    }
+    .cir-1,
+    .cir-11,
+    .cir-25,
+    .cir-6,
+    .cir-17,
+    .cir-16,
+    .cir-7,
+    .cir-20,
+    .cir-14,
+    .cir-8,
+    .cir-22 {
+      width: 12px;
+    }
   }
 }
 

@@ -531,6 +531,9 @@
         bottom: -1px;
         left: 0;
       }
+      .img-mb{
+        display: none;
+      }
     }
     .wrap-choice {
       max-width: 665px;
@@ -571,6 +574,7 @@
           color: #9d1d96;
           position: relative;
           cursor: pointer;
+          padding-right: 50px;
           .toggle {
             width: 38px;
             height: 38px;
@@ -1311,7 +1315,7 @@
       .right-intro{
         width: 100%;
         padding-left: 0;
-        min-height: 280px;
+        min-height: 312px;
         img{
           width: auto;
           height: 300px;
@@ -1353,6 +1357,7 @@
         height: 400px;
         left: 50%;
         transform: translateX(-50%);
+        object-fit: cover;
       }
     }
     .contact-ss .wrap-contact{
@@ -1386,7 +1391,228 @@
         margin: 12px 0 32px;
       }
     }
+    .benefit-ss .content {
+      .heading{
+        font-size: 48px;
+      }
+      .btn-cm{
+        margin-top: 60px;
+      }
+    }
+    .info-section {
+      .info {
+        justify-content: flex-start;
+        &.col-2 {
+          .big{
+            font-size: 100px;
+          }
+          .small .sub2{
+            margin-left: auto;
+          }
+        }
+        .big{
+          font-size: 90px;
+          margin-right: 12px;
+        }
+        .small {
+          width: 100%;
+          >span {
+            .num{
+              font-size: 90px;
+              margin-top: -10px;
+              margin-right: 12px;
+            }
+            .gram {
+              font-size: 80px;
+            }
+          }
+          .sub{
+            font-size: 24px;
+            left: 50px;
+            top: -1px;
+          }
+          .sub2{
+            font-size: 24px;
+          }
+        }
+      }
+      .pros .pro{
+        justify-content: flex-start;
+        img{
+          width: 70px;
+          margin-right: 24px;
+        }
+        span{
+          font-size: 43px;
+        }
+      }
+    }
+    .intro-ss .left-intro {
+      padding: 48px 32px 70px;
+      h2{
+        font-size: 48px;
+      }
+    }
+    .flavour-ss{
+      padding: 48px 0 70px;
+      .heading{
+        font-size: 48px;
+      }
+      .wrap-fla .item-fla {
+        padding-bottom: 160px;
+        .des{
+          font-size: 35px;
+        }
+        .img img{
+          &.can{
+            max-height: inherit;
+          }
+          &.fruit {
+            max-width: 240px;
+            right: -30px;
+          }
+        }
+      }
+    }
+    .intro2-ss{
+      padding-top: 65px;
+    }
+    .choice-ss {
+      .wrap-choice{
+        padding-bottom: 612px;
+      }
+      .heading {
+        font-size: 48px;
+      }
+      .container {
+        .img-big{
+          display: none;
+        }
+        .img-mb{
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 580px;
+          object-fit: cover;
+        }
+      }
+    }
+    .choice-2-ss .heading{
+      font-size: 48px;
+    }
+    .where-to-buy{
+      padding: 60px 0;
+      .heading{
+        font-size: 48px;
+      }
+    }
+    .contact-ss {
+      padding: 80px 0 50px;
+      .wrap-contact {
+        .left-contact {
+          .heading{
+            text-align: center;
+            font-size: 48px;
+          }
+          img{
+            width: 100%;
+          }
+        }
+        .right-contact .gform_wrapper {
+          .gform_body .gfield{
+            margin-bottom: 10px;
+          }
+          .gform_footer {
+            justify-content: center;
+            margin: 10px 0 0;
+          }
+        }
+      }
+    }
+  }
 
+  @media (max-width: 429.98px){
+    .info-section {
+      .info {
+        &.col-2 .big{
+          font-size: 65px;
+        }
+        .big{
+          font-size: 65px;
+        }
+        .small{
+          .sub{
+            font-size: 18px;
+            left: 38px;
+          }
+          .sub2 {
+            font-size: 18px;
+          }
+          >span {
+            .num{
+              font-size: 65px;
+              margin-top: -4px;
+            }
+            .gram {
+              font-size: 65px;
+            }
+          }
+        }
+      }
+      .pros .pro {
+        img {
+          width: 48px;
+        }
+        span{
+          font-size: 24px;
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: 374.9px){
+    .hero-ss .left-hero h1 {
+      font-size: 32px;
+      line-height: 150%;
+      span{
+        font-size: 70px;
+        &.lesser{
+          font-size: 70px;
+          &:after{
+            width: 50px;
+            height: 85px;
+            right: -50px;
+            bottom: 14px;
+          }
+        }
+        &.evil {
+          font-size: 70px;
+        }
+        &.choice{
+          font-size: 32px;
+        }
+      }
+    }
+    .flavour-ss .wrap-fla .item-fla {
+      padding-bottom: 120px;
+      .des{
+        font-size: 24px;
+      }
+      .img img.fruit{
+        max-width: 170px;
+      }
+    }
+    .choice-ss .faq_list .item-faq {
+      .question{
+        font-size: 24px;
+      }
+      .answer{
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
   }
 
 }
