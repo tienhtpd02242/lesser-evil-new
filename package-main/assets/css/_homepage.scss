@@ -110,13 +110,12 @@
     background-color: #ffffff;
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     z-index: 3;
     overflow: hidden;
     margin-top: -1px;
     padding: 160px 0;
-    background-size: 93% 100%;
     .wrap {
       text-align: center;
       display: flex;
@@ -127,7 +126,7 @@
     .content {
       max-width: 536px;
       text-align: left;
-      
+      margin-right: 110px;
       .heading {
         font-family: $font-primary;
         font-weight: 300;
@@ -173,7 +172,7 @@
     background-color: #fe3b1f;
     padding: 90px 0 85px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     &:before {
       content: "";
       width: 100%;
@@ -336,9 +335,21 @@
     }
     .left-intro {
       position: relative;
-      max-width: 675px;
+      max-width: 680px;
       background: #fbf11f;
       padding: 150px 0;
+      .bubble{
+        background-image: url(../images/bubble.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: calc(100% + 300px);
+        height: 100%;
+        position: absolute;
+        left: -100px;
+        bottom: 0;
+        z-index: 1;
+      }
       &:before {
         content: "";
         width: 160px;
@@ -462,6 +473,10 @@
   }
   .intro2-ss {
     background-color: #9d1d96;
+    background-image: url(../images/bubble-yellow.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
     padding-top: 75px;
     padding-bottom: 24px;
     position: relative;
@@ -609,12 +624,25 @@
     }
   }
   .choice-2-ss {
-    padding: 215px 0;
+    padding: 210px 0 180px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     z-index: 1;
+    &:before{
+      content: "";
+      background-image: url(../images/bubble-w.png);
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
     .heading {
       font-family: $font-primary;
       font-size: 80px;
@@ -648,7 +676,11 @@
     }
   }
   .contact-ss {
-    background: #1eadbb;
+    background-color: #1eadbb;
+    background-image: url(../images/bg-contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 100px 0 135px;
     position: relative;
     z-index: 2;
@@ -659,7 +691,7 @@
       content: "";
       background-image: url(../images/bg-ct.png);
       width: 100%;
-      height: 180px;
+      height: 33px;
       position: absolute;
       bottom: -16px;
       left: 0;
@@ -698,6 +730,7 @@
           display: block;
           margin: 60px auto 0;
         }
+        img.map-mb{display: none;}
       }
       .right-contact {
         padding-left: 50px;
@@ -823,7 +856,7 @@
           position: absolute;
           left: -148px;
           top: 0;
-          background: linear-gradient(90deg, rgba(255, 255, 255, 0.66) 0%, #ffffff 100%);
+          background: linear-gradient(90deg, rgb(255 255 255 / 0%) 0%, #ffffff 100%);
         }
       }
     }
@@ -881,6 +914,7 @@
     .hero-ss {
       padding: 185px 0 90px;
       .left-hero {
+        max-width: 440px;
         h1 {
           span {
             font-size: 100px;
@@ -902,6 +936,7 @@
       }
       .right-hero {
         padding-left: 50px;
+        width: calc(100% - 440px);
         .img-1 {
           img {
             height: auto;
@@ -922,6 +957,7 @@
     .intro-ss .left-intro {
       padding: 64px 0;
       max-width: 50%;
+      z-index: 1;
       &:before {
         width: 80px;
         right: -80px;
@@ -929,12 +965,11 @@
       &:after {
         max-width: 200px;
         right: -280px;
+        background: linear-gradient(90deg, #fbf11f 0%, #fbf11f00 100%);
       }
-      h2 {
-        font-size: 65px;
-        br {
-          display: none;
-        }
+      .bubble{
+        width: calc(100% + 100px);
+        z-index: -1;
       }
     }
     .flavour-ss {
@@ -981,12 +1016,6 @@
         padding: 80px 0 120px;
       }
     }
-    .choice-2-ss {
-      padding: 80px 0;
-      .heading {
-        font-size: 65px;
-      }
-    }
     .where-to-buy {
       padding: 80px 0;
       .heading {
@@ -994,7 +1023,7 @@
         line-height: 100%;
       }
       .des {
-        font-size: 28px;
+        font-size: 34px;
         line-height: 36px;
       }
     }
@@ -1301,10 +1330,21 @@
         padding-left: 32px;
         padding-right: 32px;
         &:before{display: none;}
+        .bubble{
+          background-image: url(../images/bubble-mb.png);
+          left: 0;
+          width: 100%;
+          background-size: auto;
+          background-position: right;
+        }
+        h2{
+          br{display: none;}
+        }
       }
     }
     .intro2-ss {
       overflow: hidden;
+      background-image: none;
       &:before{display: none;}
       .wrap{
         flex-direction: column;
@@ -1313,12 +1353,16 @@
         max-width: 100%;
       }
       .right-intro{
-        width: 100%;
+        width: calc(100% + 64px);
         padding-left: 0;
-        min-height: 312px;
+        min-height: 500px;
+        background-image: url(../images/bubble-yellow-mb.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
         img{
           width: auto;
-          height: 300px;
+          height: 500px;
           left: 50%;
           right: inherit;
           bottom: 0;
@@ -1359,6 +1403,9 @@
         transform: translateX(-50%);
         object-fit: cover;
       }
+    }
+    .choice-2-ss{
+      background-position: center bottom;
     }
     .contact-ss .wrap-contact{
       flex-direction: column;
@@ -1449,9 +1496,6 @@
     }
     .intro-ss .left-intro {
       padding: 48px 32px 70px;
-      h2{
-        font-size: 48px;
-      }
     }
     .flavour-ss{
       padding: 48px 0 70px;
@@ -1498,17 +1542,20 @@
         }
       }
     }
-    .choice-2-ss .heading{
-      font-size: 48px;
+    .choice-2-ss {
+      &:before{
+        background-image: url(../images/bubble-w-mb.png);
+      }
     }
     .where-to-buy{
       padding: 60px 0;
       .heading{
-        font-size: 48px;
+        font-size: 60px;
       }
     }
     .contact-ss {
       padding: 80px 0 50px;
+      background-image: none;
       .wrap-contact {
         .left-contact {
           .heading{
@@ -1517,15 +1564,27 @@
           }
           img{
             width: 100%;
+            display: none;
+          }
+          img.map-mb{
+            display: block;
+            margin-top: -24px;
+            margin: 0;
+            width: calc(100% + 64px);
+            max-width: calc(100% + 64px);
+            margin-left: -32px;
           }
         }
-        .right-contact .gform_wrapper {
-          .gform_body .gfield{
-            margin-bottom: 10px;
-          }
-          .gform_footer {
-            justify-content: center;
-            margin: 10px 0 0;
+        .right-contact {
+          margin-top: 50px;
+          .gform_wrapper {
+            .gform_body .gfield{
+              margin-bottom: 10px;
+            }
+            .gform_footer {
+              justify-content: center;
+              margin: 10px 0 0;
+            }
           }
         }
       }
@@ -1569,6 +1628,15 @@
         }
       }
 
+    }
+    .intro2-ss .right-intro{
+      min-height: 300px;
+      img{
+        height: 300px;
+      }
+    }
+    .contact-ss .wrap-contact .left-contact img.map-mb{
+      margin-top: 12px;
     }
   }
 

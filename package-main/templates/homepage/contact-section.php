@@ -4,6 +4,7 @@ $home_opts = get_fields();
 $heading_contact = $home_opts['heading_contact'];
 $description_contact = $home_opts['description_contact'];
 $image = $home_opts['image_contact'];
+$image_mb = $home_opts['image_contact_mb'];
 
 if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
     return;
@@ -36,6 +37,10 @@ if ( empty($home_opts['show_or_hide_section_contact'] ) ) {
 
                 if ( !empty($image) ) { ?>
                     <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
+                <?php }
+
+                if ( !empty($image_mb) ) { ?>
+                    <img class="map-mb" src="<?php echo $image_mb;?>">
                 <?php }
 
                 ?>

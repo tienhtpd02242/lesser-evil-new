@@ -32,6 +32,7 @@ if ( empty($home_options['show_or_hide_section_intro']) ) {
             ?>
 
             <div class="left-intro">
+                <div class="bubble"></div>
                 <?php 
 
                 if( !empty($heading_intro) ){ ?>
