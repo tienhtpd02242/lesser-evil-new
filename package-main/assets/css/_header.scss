@@ -1,6 +1,6 @@
-body.logged-in{
-    @media (max-width: $mobile-smaller){
-        .site-header .wrap .__right{
+body.logged-in {
+    @media (max-width: $mobile-smaller) {
+        .site-header .wrap .__right {
             // top: 126px;
         }
     }
@@ -24,7 +24,9 @@ body .site-header {
                 width: auto;
             }
         }
-        .__toggle-menu{display: none;}
+        .__toggle-menu {
+            display: none;
+        }
         .__right {
             display: flex;
             align-items: flex-end;
@@ -37,7 +39,7 @@ body .site-header {
                 font-size: 24px;
                 line-height: 28px;
                 border: none;
-                padding: 16px 33px;
+                padding: 14px 26px;
                 &:hover {
                     background-color: #fff21f;
                     color: #000000;
@@ -46,6 +48,7 @@ body .site-header {
             ul {
                 list-style: none;
                 display: flex;
+                margin-top: 5px;
                 li {
                     &:not(:last-child) {
                         margin-right: 10px;
@@ -106,11 +109,11 @@ body .site-header {
         }
     }
 
-    @media (max-width: $mobile-smaller){
+    @media (max-width: $mobile-smaller) {
         padding: 32px 0 0;
         .wrap {
             justify-content: center;
-            .__toggle-menu{
+            .__toggle-menu {
                 width: 50px;
                 height: 50px;
                 background-color: #ffffff;
@@ -122,62 +125,62 @@ body .site-header {
                 right: 32px;
                 top: 0;
                 cursor: pointer;
-                span{
+                span {
                     height: 4px;
                     width: 32px;
                     background-color: #e7104c;
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         margin: 6px 0;
                     }
                 }
-                &.active{
-                    span{
+                &.active {
+                    span {
                         position: absolute;
-                        &:nth-child(1){
+                        &:nth-child(1) {
                             transform: rotate(135deg);
                         }
-                        &:nth-child(2){
+                        &:nth-child(2) {
                             display: none;
                         }
-                        &:nth-child(3){
+                        &:nth-child(3) {
                             transform: rotate(-135deg);
                         }
                     }
                 }
             }
-            .__right{
+            .__right {
                 opacity: 0;
                 visibility: hidden;
                 position: absolute;
                 top: 50px;
                 left: 0;
                 width: 100%;
-                background: #FFFFFF;
+                background: #ffffff;
                 z-index: 999;
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 24px;
-                transition: .3s ease all;
-                &.active{
+                transition: 0.3s ease all;
+                &.active {
                     opacity: 1;
                     visibility: visible;
                 }
                 ul {
                     width: 100%;
                     li {
-                        &:not(:last-child){
+                        &:not(:last-child) {
                         }
-                        a{
-                            background-color: #E7104C;
-                            svg path{
-                               fill: #FFFFFF;
+                        a {
+                            background-color: #e7104c;
+                            svg path {
+                                fill: #ffffff;
                             }
-                           }
+                        }
                     }
                 }
-                ._cta{
-                    background: #E7104C;
-                    color: #FFFFFF;
+                ._cta {
+                    background: #e7104c;
+                    color: #ffffff;
                     margin-left: 0;
                     margin-top: 24px;
                     font-size: 18px;
@@ -186,8 +189,8 @@ body .site-header {
         }
     }
 
-    @media (max-width: 429.98px){
-        .wrap .__toggle-menu{
+    @media (max-width: 429.98px) {
+        .wrap .__toggle-menu {
             right: 16px;
         }
     }
