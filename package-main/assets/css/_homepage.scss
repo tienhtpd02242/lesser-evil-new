@@ -1426,6 +1426,9 @@
       flex-direction: column;
       .left-contact {
         max-width: 100%;
+        img {
+          margin: 48px auto 0;
+        }
       }
       .right-contact {
         width: 100%;
@@ -1588,6 +1591,7 @@
             width: calc(100% + 64px);
             max-width: calc(100% + 64px);
             margin-left: -32px;
+            height: auto;
           }
         }
         .right-contact {
