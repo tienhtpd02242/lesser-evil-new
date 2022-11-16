@@ -478,7 +478,7 @@
   }
   .intro2-ss {
     background-color: #9d1d96;
-    background-image: url(../images/intro2-ss-bg.png);
+    // background-image: url(../images/intro2-ss-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -506,6 +506,11 @@
     .left-intro {
       max-width: 805px;
       width: 100%;
+      background-image: url(../images/bubble-left.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 100px 0px;
       .heading-intro {
         font-family: $font-primary;
         font-size: 85px;
@@ -532,6 +537,10 @@
       text-align: right;
       z-index: 3;
       position: relative;
+      background-image: url(../images/bubble-right.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
       img {
         margin-bottom: -27px;
       }
@@ -1236,6 +1245,13 @@
       .right-contact {
         width: 50%;
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .intro2-ss .left-intro {
+      background-size: cover;
+      padding: 0;
     }
   }
 
