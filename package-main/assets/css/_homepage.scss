@@ -25,6 +25,9 @@
     .left-hero {
       max-width: 520px;
       z-index: 1;
+      .img-mb {
+        display: none;
+      }
       h1 {
         font-family: $font-primary;
         font-weight: 300;
@@ -66,7 +69,7 @@
       }
       p {
         font-weight: 400;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 140%;
         color: #ffffff;
         margin: 12px 0 48px;
@@ -133,7 +136,7 @@
       .heading {
         font-family: $font-primary;
         font-weight: 300;
-        font-size: 85px;
+        font-size: 50px;
         line-height: 100%;
         color: $primary-color;
         text-align: center;
@@ -143,10 +146,10 @@
       }
       ._des-mb {
         font-family: $font-second;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 32px;
         text-align: left;
-        font-weight: 700;
+        font-weight: 500;
         margin-top: 22px;
         color: #000000;
       }
@@ -378,20 +381,20 @@
       }
       h2 {
         font-family: $font-primary;
-        font-size: 85px;
+        font-size: 50px;
         line-height: 100%;
         font-weight: 300;
         color: #ee402f;
       }
       .des-intro {
         font-family: $font-second;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 32px;
-        font-weight: 700;
+        font-weight: 500;
         margin-top: 32px;
         span {
           display: block;
-          margin-top: 24px;
+          margin-bottom: 24px;
         }
       }
     }
@@ -411,12 +414,10 @@
       margin-top: 42px;
       .item-fla {
         display: block;
-        &:hover {
-          img.fruit {
-            -webkit-animation: tada 4s linear infinite;
-            -moz-animation: tada 4s linear infinite;
-            animation: tada 4s linear infinite;
-          }
+        img.fruit {
+          -webkit-animation: tada 4s linear infinite;
+          -moz-animation: tada 4s linear infinite;
+          animation: tada 4s linear infinite;
         }
         .img {
           position: relative;
@@ -449,8 +450,8 @@
     .heading {
       font-family: $font-primary;
       font-weight: 300;
-      font-size: 90px;
-      line-height: 120px;
+      font-size: 50px;
+      line-height: 120%;
       color: #e7104c;
       margin-bottom: 20px;
     }
@@ -478,12 +479,10 @@
   }
   .intro2-ss {
     background-color: #9d1d96;
-    // background-image: url(../images/intro2-ss-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     padding-top: 75px;
-    padding-bottom: 24px;
     position: relative;
     z-index: 1;
     &:before {
@@ -495,9 +494,10 @@
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
-      bottom: -10px;
+      top: -10px;
       left: 0;
       z-index: 1;
+      transform: rotate(180deg);
     }
     .wrap {
       display: flex;
@@ -513,7 +513,7 @@
       padding: 100px 0px;
       .heading-intro {
         font-family: $font-primary;
-        font-size: 85px;
+        font-size: 50px;
         line-height: 100%;
         font-weight: 300;
         color: #ffffff;
@@ -524,7 +524,7 @@
       }
       .des-intro {
         font-family: $font-second;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 32px;
         font-weight: 500;
         color: #ffffff;
@@ -542,7 +542,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       img {
-        margin-bottom: -27px;
+        margin-bottom: -13px;
       }
     }
   }
@@ -573,8 +573,8 @@
     .heading {
       font-family: $font-primary;
       font-weight: 300;
-      font-size: 85px;
-      line-height: 93px;
+      font-size: 50px;
+      line-height: 120%;
       color: #9d1d96;
     }
     .faq_list {
@@ -630,7 +630,7 @@
           margin-top: 22px;
           font-family: $font-second;
           font-weight: 500;
-          font-size: 19px;
+          font-size: 18px;
           line-height: 29px;
           color: #000000;
         }
@@ -674,8 +674,8 @@
     .heading {
       font-family: $font-primary;
       font-weight: 300;
-      font-size: 70px;
-      line-height: 94px;
+      font-size: 50px;
+      line-height: 110%;
       text-align: center;
       color: #1f1f1f;
       margin-bottom: 32px;
@@ -734,7 +734,7 @@
         }
         .des {
           font-family: $font-second;
-          font-size: 19px;
+          font-size: 18px;
           line-height: 32px;
           font-weight: 400;
           color: #ffffff;
@@ -855,7 +855,6 @@
   @media (max-width: 1800.98px) {
     .info-section .wrap {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 70px;
     }
   }
   @media (max-width: 1600.98px) {
@@ -879,7 +878,6 @@
       }
     }
     .info-section {
-      padding: 64px 0;
       .info {
         .big {
           font-size: 100px;
@@ -958,22 +956,20 @@
         .img-1 {
           img {
             height: auto;
-            margin-right: 0;
+            margin-right: -22%;
           }
         }
       }
     }
     .benefit-ss .content {
-      .heading {
-        font-size: 65px;
-      }
+      margin-right: 0;
       .btn-cm {
         margin-top: 32px;
         padding: 16px 24px;
       }
     }
     .intro-ss .left-intro {
-      padding: 64px 0;
+      padding: 80px 0;
       max-width: 50%;
       z-index: 1;
       &:before {
@@ -994,10 +990,6 @@
       .container {
         max-width: 100%;
       }
-      .heading {
-        font-size: 65px;
-        line-height: 100%;
-      }
       .wrap-fla .item-fla .des {
         font-size: 28px;
         line-height: 32px;
@@ -1007,23 +999,16 @@
     .intro2-ss {
       .left-intro {
         max-width: 50%;
-        .heading-intro {
-          font-size: 65px;
-        }
       }
       .right-intro {
         width: 50%;
         img {
           height: 600px;
-          margin-bottom: -27px;
+          margin-bottom: -11px;
         }
       }
     }
     .choice-ss {
-      .heading {
-        font-size: 65px;
-        line-height: 100%;
-      }
       .container {
         .img-big {
           height: 700px;
@@ -1036,10 +1021,6 @@
     }
     .where-to-buy {
       padding: 80px 0;
-      .heading {
-        font-size: 65px;
-        line-height: 100%;
-      }
       .des {
         font-size: 34px;
         line-height: 36px;
@@ -1082,7 +1063,7 @@
     }
     .info-section {
       .wrap {
-        grid-gap: 48px;
+        grid-gap: 80px;
       }
       .info {
         &.col-2 {
@@ -1148,7 +1129,7 @@
     }
   }
 
-  @media (max-width: 1024.98px) {
+  @media (max-width: 1200px) {
     .hero-ss {
       .left-hero {
         max-width: 50%;
@@ -1183,6 +1164,22 @@
         padding-left: 24px;
       }
     }
+
+    .intro2-ss .left-intro {
+      background-size: cover;
+      padding: 0;
+    }
+
+    .benefit-ss .content {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 1024.98px) {
+    .hero-ss .left-hero p {
+      font-size: 24px;
+      margin-bottom: 28px;
+    }
     .benefit-ss .content {
       max-width: 450px;
       padding: 80px 0 80px 24px;
@@ -1190,6 +1187,22 @@
       &:before {
         width: 80px;
         left: -80px;
+      }
+    }
+    .info-section {
+      .wrap {
+        grid-gap: 40px;
+      }
+      .info.col-2 {
+        &:before {
+          left: -25px;
+        }
+        &:after {
+          right: -38px;
+        }
+      }
+      .pros .pro {
+        justify-content: center;
       }
     }
     .intro-ss .left-intro {
@@ -1221,9 +1234,6 @@
     .intro2-ss {
       .left-intro {
         max-width: 50%;
-        .heading-intro {
-          font-size: 48px;
-        }
       }
       .right-intro {
         width: 50%;
@@ -1233,7 +1243,7 @@
           height: auto;
           position: absolute;
           right: 0;
-          bottom: 5px;
+          bottom: 8px;
           width: calc(100% - 48px);
         }
       }
@@ -1248,14 +1258,22 @@
     }
   }
 
-  @media (max-width: 1200px) {
-    .intro2-ss .left-intro {
-      background-size: cover;
-      padding: 0;
+  @media (max-width: 992px) {
+    .benefit-ss {
+      background-position: 18% center;
     }
   }
 
   @media (max-width: 900.98px) {
+    .benefit-ss {
+      .content {
+        max-width: 50%;
+        margin-right: 0;
+        ._des-mb {
+          font-size: 18px;
+        }
+      }
+    }
     .info-section {
       .container {
         justify-content: center;
@@ -1269,12 +1287,12 @@
         justify-content: center;
         &:after {
           content: "";
-          height: 12px;
+          height: 15px;
           width: 100%;
           background-image: url(../images/layer-yellow-mb.png);
           background-position: center;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           position: absolute;
           bottom: -56px;
         }
@@ -1300,9 +1318,6 @@
           }
         }
       }
-      .pros .pro {
-        justify-content: center;
-      }
     }
     .flavour-ss .wrap-fla .item-fla .img img.fruit {
       max-width: 120px;
@@ -1316,10 +1331,14 @@
       }
       .left-hero {
         max-width: 100%;
+        .img-mb {
+          display: block;
+        }
       }
       .right-hero {
         width: 100%;
         padding-left: 0;
+        display: none;
       }
     }
     .benefit-ss {
@@ -1381,9 +1400,6 @@
     .intro2-ss {
       overflow: hidden;
       background-image: none;
-      &:before {
-        display: none;
-      }
       .wrap {
         flex-direction: column;
       }
@@ -1480,9 +1496,6 @@
       }
     }
     .benefit-ss .content {
-      .heading {
-        font-size: 48px;
-      }
       .btn-cm {
         margin-top: 60px;
       }
@@ -1540,9 +1553,6 @@
     }
     .flavour-ss {
       padding: 48px 0 70px;
-      .heading {
-        font-size: 48px;
-      }
       .wrap-fla .item-fla {
         padding-bottom: 160px;
         .des {
@@ -1566,9 +1576,6 @@
       .wrap-choice {
         padding-bottom: 612px;
       }
-      .heading {
-        font-size: 48px;
-      }
       .container {
         .img-big {
           display: none;
@@ -1590,19 +1597,12 @@
     }
     .where-to-buy {
       padding: 60px 0;
-      .heading {
-        font-size: 60px;
-      }
     }
     .contact-ss {
       padding: 80px 0 50px;
       background-image: none;
       .wrap-contact {
         .left-contact {
-          .heading {
-            text-align: center;
-            font-size: 48px;
-          }
           img {
             width: 100%;
             display: none;
