@@ -1701,28 +1701,28 @@
   }
 
   @media (max-width: 374.9px) {
-    .hero-ss .left-hero h1 {
-      font-size: 32px;
-      line-height: 150%;
-      span {
-        font-size: 70px;
-        &.lesser {
-          font-size: 70px;
-          &:after {
-            width: 50px;
-            height: 85px;
-            right: -50px;
-            bottom: 14px;
-          }
-        }
-        &.evil {
-          font-size: 70px;
-        }
-        &.choice {
-          font-size: 32px;
-        }
-      }
-    }
+    // .hero-ss .left-hero h1 {
+    //   font-size: 32px;
+    //   line-height: 150%;
+    //   span {
+    //     font-size: 70px;
+    //     &.lesser {
+    //       font-size: 70px;
+    //       &:after {
+    //         width: 50px;
+    //         height: 85px;
+    //         right: -50px;
+    //         bottom: 14px;
+    //       }
+    //     }
+    //     &.evil {
+    //       font-size: 70px;
+    //     }
+    //     &.choice {
+    //       font-size: 32px;
+    //     }
+    //   }
+    // }
     .flavour-ss .wrap-fla .item-fla {
       padding-bottom: 120px;
       .des {
