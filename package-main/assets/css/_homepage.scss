@@ -806,6 +806,10 @@
                   &::placeholder {
                     color: #000000;
                   }
+                  &:focus,
+                  &:focus-visible {
+                    border: none;
+                  }
                 }
                 textarea {
                   padding: 18px 22px;
