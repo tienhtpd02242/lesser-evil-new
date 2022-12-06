@@ -112,7 +112,7 @@ body .site-header {
     @media (max-width: $mobile-smaller) {
         padding: 32px 0 0;
         .wrap {
-            justify-content: center;
+            justify-content: flex-start;
             .__toggle-menu {
                 width: 50px;
                 height: 50px;
