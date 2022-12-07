@@ -42,18 +42,6 @@
             position: relative;
             font-size: 148px;
             line-height: 75%;
-            &:after {
-              content: "";
-              width: 90px;
-              height: 150px;
-              background-image: url(../images/icon/le-icon.svg);
-              background-position: center;
-              background-size: contain;
-              background-repeat: no-repeat;
-              position: absolute;
-              right: -90px;
-              bottom: 34px;
-            }
           }
           &.evil {
             font-size: 148px;
@@ -357,6 +345,7 @@
         left: -100px;
         bottom: 0;
         z-index: 1;
+        opacity: 0.6;
       }
       &:before {
         content: "";
@@ -458,8 +447,8 @@
     .des {
       font-family: $font-second;
       font-weight: 500;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 18px;
+      line-height: 120%;
       text-align: center;
       color: #000000;
     }
@@ -663,7 +652,6 @@
       line-height: 100%;
       font-weight: 300;
       color: #ffffff;
-      max-width: 948px;
       margin: 0 auto;
       text-align: center;
     }
@@ -671,14 +659,31 @@
   .where-to-buy {
     background: #ffffff;
     padding: 100px 0;
+    text-align: center;
     .heading {
       font-family: $font-primary;
       font-weight: 300;
       font-size: 50px;
       line-height: 110%;
       text-align: center;
-      color: #1f1f1f;
+      color: #e7104c;
       margin-bottom: 24px;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "";
+        width: 50px;
+        height: 70px;
+        background-image: url(../images/le-halo-red.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        transform: rotate(-20deg);
+        @media (max-width: 374px) {
+          right: -20px;
+        }
+      }
     }
     .des {
       font-size: 16px;
@@ -1338,15 +1343,22 @@
         }
         h1 {
           margin-bottom: 24px;
+          font-size: 50px;
+          text-align: center;
+          br {
+            display: none;
+          }
           span {
             font-size: 50px;
           }
           span.lesser,
           span.evil {
-            font-size: 72px;
+            font-size: 50px;
           }
           span.choice {
             font-size: 50px;
+            right: 0;
+            top: 0;
           }
           span.lesser::after {
             display: none;
@@ -1487,6 +1499,7 @@
     }
     .choice-2-ss {
       background-position: center bottom;
+      padding: 100px 0 100px;
     }
     .contact-ss .wrap-contact {
       flex-direction: column;
@@ -1510,23 +1523,23 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      h1 {
-        font-size: 32px;
-        text-align: left;
-        margin-bottom: 20px;
-        span {
-          font-size: 32px;
-        }
-        span.lesser,
-        span.evil {
-          font-size: 50px;
-        }
-        span.choice {
-          font-size: 32px;
-          top: -15px;
-          right: 15px;
-        }
-      }
+      // h1 {
+      //   font-size: 32px;
+      //   text-align: left;
+      //   margin-bottom: 20px;
+      //   span {
+      //     font-size: 32px;
+      //   }
+      //   span.lesser,
+      //   span.evil {
+      //     font-size: 50px;
+      //   }
+      //   span.choice {
+      //     font-size: 32px;
+      //     top: -15px;
+      //     right: 15px;
+      //   }
+      // }
       p {
         font-size: 18px;
         text-align: center;
@@ -1588,9 +1601,6 @@
     }
     .intro-ss .left-intro {
       padding: 48px 32px 70px;
-    }
-    .intro-ss .left-intro h2 {
-      font-size: 42px;
     }
     .flavour-ss {
       padding: 48px 0 70px;
