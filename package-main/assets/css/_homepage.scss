@@ -620,8 +620,8 @@
           margin-top: 22px;
           font-family: $font-second;
           font-weight: 500;
-          font-size: 22px;
-          line-height: 125%;
+          font-size: 18px;
+          line-height: 130%;
           color: #000000;
         }
       }
@@ -687,7 +687,7 @@
       }
     }
     .des {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 125%;
       font-family: "DM Sans", sans-serif;
       text-align: center;
@@ -1772,10 +1772,6 @@
     .choice-ss .faq_list .item-faq {
       .question {
         font-size: 24px;
-      }
-      .answer {
-        font-size: 16px;
-        line-height: 28px;
       }
     }
     .info-section .container {
