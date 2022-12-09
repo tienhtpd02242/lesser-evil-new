@@ -620,8 +620,8 @@
           margin-top: 22px;
           font-family: $font-second;
           font-weight: 500;
-          font-size: 18px;
-          line-height: 29px;
+          font-size: 22px;
+          line-height: 125%;
           color: #000000;
         }
       }
@@ -1442,6 +1442,7 @@
       }
       .left-intro {
         max-width: 100%;
+        background-image: none;
       }
       .right-intro {
         width: calc(100% + 64px);
@@ -1599,6 +1600,9 @@
           font-size: 43px;
         }
       }
+    }
+    .intro2-ss:before {
+      height: 20px;
     }
     .intro-ss .left-intro {
       padding: 48px 32px 70px;
