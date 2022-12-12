@@ -449,7 +449,7 @@
       font-family: $font-second;
       font-weight: 500;
       font-size: 18px;
-      line-height: 120%;
+      line-height: 32px;
       text-align: center;
       color: #000000;
     }
@@ -621,7 +621,7 @@
           font-family: $font-second;
           font-weight: 500;
           font-size: 18px;
-          line-height: 130%;
+          line-height: 32px;
           color: #000000;
         }
       }
@@ -688,16 +688,16 @@
     }
     .des {
       font-size: 18px;
-      line-height: 125%;
+      line-height: 32px;
       font-family: "DM Sans", sans-serif;
       text-align: center;
       color: #1f1f1f;
-      font-weight: 400;
+      font-weight: 500;
     }
   }
   .contact-ss {
     background-color: #1eadbb;
-    background-image: url(../images/contact-background.png);
+    background-image: url(../images/contact-bg-new.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
